@@ -1,5 +1,5 @@
 s = "Guido van Rossum heeft programmeertaal Python bedacht."
 klinker = ('aeiou')
-for word in s:
-    if word in klinker:
-        print(word)
+for char in s:
+    if char in klinker:
+        print(char)
