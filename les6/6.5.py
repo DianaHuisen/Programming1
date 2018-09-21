@@ -5,5 +5,6 @@ def kwadraten_som(lijst):
             kwadraat=getal**2
             som=som+kwadraat
     return som
+
 grondgetallen = [ 4, 5, 3, -81 ]
 print(kwadraten_som(grondgetallen))
