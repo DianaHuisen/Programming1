@@ -25,6 +25,6 @@ def ritprijs(leeftijd, weekendrit, afstandKM):
 
 afstandKM=eval(input("Hoeveel kilometer is de reis: "))
 print(standaardprijs(afstandKM))
-leeftijd=24
+leeftijd=eval(input("Wat is je leeftijd: "))
 weekendrit=input("op welke dag ga je (schrijf zonder hoofdletter): ")
 ritprijs(leeftijd, weekendrit, afstandKM)
