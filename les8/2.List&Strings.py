@@ -6,13 +6,10 @@ infile=open("strings.txt",'r')
 regel=infile.readlines()
 letters=''
 for words in regel:
-    woord=words.split("\", \"")
-    #print(woord)
+    woorden=words.split("\", \"")
     outfile = open("strings.txt", 'a')
     outfile.write('\nDe nieuwgemaakte lijst is: ')
-    for letter in woord:
-        if len(letter) == 4:
-            letters+=letter
-            outfile.write('\''+letter+'\', ')
-
+    for woord in woorden:
+        if len(woord) == 4:
+            outfile.write('\''+woord+'\', ')
 outfile.close()
