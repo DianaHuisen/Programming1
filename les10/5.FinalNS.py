@@ -1,25 +1,25 @@
 def inlezen_beginstation(stations):
     while True:
-        inp_beginstation = input("Wat is je beginstation?\n>> ")
-        if inp_beginstation in stations:
-            return inp_beginstation
+        beginstation = input("Wat is je beginstation?\n>> ")
+        if beginstation in stations:
+            return beginstation
 
         else:
             print("Station bestaat niet in dit traject!\n")
 
 def inlezen_eindstation(stations, beginstation):
     while True:
-        inp_eindstation = input("Wat is je eindstation?\n>> ")
-        if inp_eindstation in stations:
-            if stations.index(inp_eindstation) > stations.index(beginstation):
-                return inp_eindstation
+        eindstation = input("Wat is je eindstation?\n>> ")
+        if eindstation in stations:
+            if stations.index(eindstation) > stations.index(beginstation):
+                return eindstation
 
-            elif beginstation == inp_eindstation:
-                print("Je stapt al in op station {}\n".format(inp_eindstation))
+            elif beginstation == eindstation:
+                print("Je stapt al in op station {}\n".format(eindstation))
             else:
                 print("Dit station is voor station: {}\n".format(beginstation))
         else:
-            print("Deze trein komt niet in {}!\n".format(inp_eindstation))
+            print("Deze trein komt niet in {}!\n".format(eindstation))
 
 def omroepen_reis(stations, beginstation, eindstation):
     print("\nHet beginstation {} is het {}e station in het traject.".format(beginstation, stations.index(beginstation) + 1))
